@@ -27,11 +27,11 @@ async def root():
 @app.get("/demo/")
 async def demoGet(media: float, perc_faltas: float, perc_disc_conc: float):
     return [
-        {"class1": 0.01},
-        {"class2": 0.99},
+        {"evasor": 0.01},
+        {"nao-evasor": 0.99},
     ]
 
-    
+
 @app.post("/demo/")
 async def demoPost(aluno: Aluno):
     return Classficador(0.01, 0.99)
