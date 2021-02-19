@@ -28,8 +28,10 @@ async def root():
 async def demoGet(media: float, perc_faltas: float, perc_disc_conc: float):
     return [
         {"class1": 0.01},
-        {"class2": 0.09},
+        {"class2": 0.99},
     ]
+
+    
 @app.post("/demo/")
 async def demoPost(aluno: Aluno):
     return Classficador(0.01, 0.99)
